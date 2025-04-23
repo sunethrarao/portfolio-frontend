@@ -2,12 +2,13 @@
   <div class="container-fluid portfolio-content mt-3">
     <h1
       class="text-center title-header"
-      [ngClass]="{
-        'bg-dark text-purple-500': theme() === 'dark',
-        'bg-light text-purple-500': theme() === 'light'
-      }"
     >
-      My Portfolio
+      <span [ngClass]="{
+        'bg-dark': theme() === 'dark',
+        'bg-light': theme() === 'light'
+      }">
+
+      </span>My Portfolio
     </h1>
     <p class="text-center">
       Welcome to my portfolio! Here you can find a collection of my projects and
