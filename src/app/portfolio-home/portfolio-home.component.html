@@ -1,14 +1,14 @@
 <main class="flex-shrink-0 py-4 container">
   <div class="container-fluid portfolio-content mt-3">
-    <h1
-      class="text-center title-header"
-    >
-      <span [ngClass]="{
-        'bg-dark': theme() === 'dark',
-        'bg-light': theme() === 'light'
-      }">
-
-      </span>My Portfolio
+    <h1 class="text-center title-header">
+      <span
+        [ngClass]="{
+          'bg-dark': theme() === 'dark',
+          'bg-light': theme() === 'light'
+        }"
+      >
+      </span
+      >My Portfolio
     </h1>
     <p class="text-center">
       Welcome to my portfolio! Here you can find a collection of my projects and
@@ -16,5 +16,11 @@
       questions or would like to get in touch, feel free to reach out to me
       through the contact page.
     </p>
+  </div>
+
+  <div class="container">
+    <div class="row mt-3">
+      <app-carousel></app-carousel>
+    </div>
   </div>
 </main>
