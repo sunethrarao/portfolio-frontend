@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://picsum.photos/id/10/800/400",
+    "title": "Image 1",
+    "description": "Description for image 1"
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://picsum.photos/id/20/800/400",
+    "title": "Image 2",
+    "description": "Description for image 2"
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://picsum.photos/id/30/800/400",
+    "title": "Image 3",
+    "description": "Description for image 3"
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://picsum.photos/id/40/800/400",
+    "title": "Image 4",
+    "description": "Description for image 4"
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://picsum.photos/id/50/800/400",
+    "title": "Image 5",
+    "description": "Description for image 5"
+  }
+]

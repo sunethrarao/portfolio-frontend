@@ -4,6 +4,7 @@ import { ThemeService } from '../shared/services/theme.service';
 import { CarouselComponent } from "../feature/carousel/carousel.component";
 @Component({
   selector: 'app-portfolio-home',
+  standalone: true,
   imports: [CommonModule, CarouselComponent],
   templateUrl: './portfolio-home.component.html',
   styleUrl: './portfolio-home.component.scss',

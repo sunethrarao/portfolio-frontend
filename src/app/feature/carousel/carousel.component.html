@@ -1,62 +1,39 @@
-<ngb-carousel
-  [interval]="3000"
-  [pauseOnHover]="true"
-  *ngIf="images && images.length > 0"
->
-  @for (image of images; track $index; let i = $index) {
-  <ng-template ngbSlide>
-    <div
-      class="picsum-img-wrapper"
-      style="width: 100%; height: 300px; background-color: #f8f9fa"
-    >
-      <img
-        [src]="image"
-        alt="Slide {{ i + 1 }}"
-        class="d-block w-100 h-100"
-        style="object-fit: cover"
-      />
+<div class="carousel-container">
+  <!-- Loading indicator -->
+  <div *ngIf="isLoading" class="text-center py-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
-    <div class="carousel-caption">
-      <h3>Slide {{ i + 1 }}</h3>
-      <p>Description or details for slide {{ i + 1 }}.</p>
-    </div>
-  </ng-template>
-  }
-</ngb-carousel>
+  </div>
 
-@if (!images || images.length === 0) {
-<div class="alert alert-info text-center" role="alert">
-  No images to display in the carousel.
+  <!-- Error message if no images -->
+  <div
+    *ngIf="!isLoading && carouselImages.length === 0"
+    class="alert alert-info text-center"
+  >
+    No images available to display.
+  </div>
+
+  <!-- Owl Carousel -->
+  <owl-carousel-o
+    [options]="customOptions"
+    *ngIf="!isLoading && carouselImages.length > 0"
+  >
+    <ng-container *ngFor="let image of carouselImages">
+      <ng-template carouselSlide [id]="image.id.toString()">
+        <div class="card h-100 m-2">
+          <img
+            [src]="image.imageUrl"
+            [alt]="image.title"
+            class="card-img-top"
+            style="height: 300px; object-fit: cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ image.title }}</h5>
+            <p class="card-text">{{ image.description }}</p>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
 </div>
-}
-
-<ngb-carousel [interval]="3000" [pauseOnHover]="true">
-  @for (image of images; track $index; let i = $index) {
-  <ng-template ngbSlide>
-    <div
-      class="picsum-img-wrapper"
-      style="width: 100%; height: 300px; background-color: #f8f9fa"
-    >
-      <img
-        [src]="image"
-        alt="Slide {{ i + 1 }}"
-        class="d-block w-100 h-100"
-        style="object-fit: cover"
-      />
-    </div>
-    <div class="carousel-caption">
-      <h3>Slide {{ i + 1 }}</h3>
-      <p>Description for slide {{ i + 1 }}.</p>
-    </div>
-  </ng-template>
-  } @empty {
-  <ng-template ngbSlide>
-    <div
-      class="d-flex justify-content-center align-items-center"
-      style="width: 100%; height: 300px; background-color: #e9ecef"
-    >
-      <p class="text-muted">No images available.</p>
-    </div>
-  </ng-template>
-  }
-</ngb-carousel>
