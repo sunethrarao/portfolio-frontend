@@ -16,8 +16,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
+          "baseHref": "/portfolio-frontend/",
           "options": {
-            "outputPath": "dist/",
+            "outputPath": "dist/portfolio-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js", "@angular/localize/init"],
@@ -106,6 +107,9 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
