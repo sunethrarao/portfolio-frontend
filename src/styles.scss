@@ -35,4 +35,21 @@ footer.footer.bg-light {
 }
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
+
+// Owl Carousel Customization
+.owl-prev,
+.owl-next {
+  width: 125px !important;
+  display: inline-block;
+  background: #750075 !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  font-family: "Graphik" !important;
+  text-align: center;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 10px !important;
+}

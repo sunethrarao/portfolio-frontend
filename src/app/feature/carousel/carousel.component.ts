@@ -20,16 +20,18 @@ export class CarouselComponent {
 
   // Owl Carousel Options
   customOptions: OwlOptions = {
+    autoplay: true,
+    lazyLoad: true,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
     dots: true,
     navSpeed: 700,
-    navText: [
-      '<i class="bi bi-chevron-left"></i> Prev ',
-      '<i class="bi bi-chevron-right"></i> Next ',
-    ],
+    // navText: [
+    //   '<i class="bi bi-chevron-left"></i> Prev ',
+    //   'Next <i class="bi bi-chevron-right"></i>',
+    // ],
     responsive: {
       0: {
         items: 1,
@@ -47,7 +49,7 @@ export class CarouselComponent {
         items: 4,
       },
     },
-    nav: true,
+    nav: false,
   };
 
   constructor(private imageService: ImageService, private http: HttpClient) {}

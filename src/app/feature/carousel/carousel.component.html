@@ -21,7 +21,7 @@
   >
     <ng-container *ngFor="let image of carouselImages">
       <ng-template carouselSlide [id]="image.id.toString()">
-        <div class="card h-100 m-2">
+        <div class="card h-100 m-3">
           <img
             [src]="image.imageUrl"
             [alt]="image.title"

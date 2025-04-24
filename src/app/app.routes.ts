@@ -4,11 +4,11 @@ import { PortfolioHomeComponent } from './portfolio-home/portfolio-home.componen
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'portfolio',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
-    path: 'portfolio',
+    path: 'home',
     component: PortfolioHomeComponent,
   },
 ];
