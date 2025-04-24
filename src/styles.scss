@@ -15,7 +15,7 @@ body {
 }
 body {
   font-family: $font-family !important;
-  margin: 56px auto 0 !important;
+  margin: 56px auto !important;
 }
 .navbar-dark.bg-dark {
   background: $navbar-dark-bg !important;
@@ -33,9 +33,6 @@ footer.footer.bg-light {
   font-weight: 500;
   font-size: 12px;
 }
-
-/* Importing Bootstrap SCSS file. */
-// @import 'bootstrap/scss/bootstrap';
 
 // Owl Carousel Customization
 .owl-prev,

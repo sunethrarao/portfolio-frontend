@@ -62,7 +62,6 @@ export class CarouselComponent {
     this.isLoading = true;
     this.imageService.getImages().subscribe({
       next: (images) => {
-        console.log(images);
         this.carouselImages = images;
         this.isLoading = false;
       },

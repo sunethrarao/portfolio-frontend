@@ -20,7 +20,30 @@
 
   <div class="container">
     <div class="row mt-3">
+      <h1 class="text-center title-header">
+        <span
+          [ngClass]="{
+            'bg-dark': theme() === 'dark',
+            'bg-light': theme() === 'light'
+          }"
+        >
+        </span
+        >My Carousel Gallery
+      </h1>
+      <p class="text-center">
+        This is a sample portfolio page created using Angular. It includes a
+        carousel component to showcase projects The page is styled with
+        Bootstrap for a clean and modern look.
+      </p>
       <app-carousel></app-carousel>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-3">
+      <p class="text-center">
+        Many more content to come! Keep Watching this space!
+      </p>
     </div>
   </div>
 </main>
