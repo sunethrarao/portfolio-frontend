@@ -13,7 +13,7 @@ export interface CarouselImage {
   providedIn: 'root',
 })
 export class ImageService {
-  private imagesUrl = 'assets/data/images.json'; // Remove the leading slash
+  private imagesUrl = 'assets/data/images.json'; 
   constructor(private http: HttpClient) {}
 
   getImages(): Observable<CarouselImage[]> {
