@@ -1,0 +1,88 @@
+{
+  "title": "Démo i18n Angular",
+  "welcome": "Bienvenue",
+  "selectLanguage": "Choisir la langue",
+  "greeting": "Bonjour!",
+  "paragraph": "Ceci est un exemple d'internationalisation dans Angular 19 sans NgModules.",
+  "buttonText": "Cliquez-moi",
+
+  "formTitle": "Formulaire de Contact",
+  "nameLabel": "Nom",
+  "namePlaceholder": "Entrez votre nom",
+  "emailLabel": "Adresse e-mail",
+  "emailPlaceholder": "Entrez votre e-mail",
+  "termsLabel": "J'accepte les termes et conditions",
+  "submitButton": "Soumettre",
+
+  "footerText": "© 2025 Démo i18n Angular. Tous droits réservés.",
+  "privacyLink": "Politique de Confidentialité",
+  "termsLink": "Conditions d'Utilisation",
+  "contactLink": "Contactez-nous",
+  "setUptitle": "Aperçu de la configuration d'internationalisation",
+  "coreImplementation": "Implémentation de base :",
+  "coreItems": [
+    {
+      "id": 1,
+      "title": "Sans NgModules :",
+      "description": "Utilisation de composants autonomes partout."
+    },
+    {
+      "id": 2,
+      "title": "Intégration Bootstrap :",
+      "description": "Pour l'interface utilisateur du menu déroulant de langues."
+    },
+    {
+      "id": 3,
+      "title": "Sélection de langue :",
+      "description": "Menu déroulant pour basculer entre l'anglais (en) et le français (fr)."
+    },
+    {
+      "id": 4,
+      "title": "Signals :",
+      "description": "Exploitation des signals d'Angular 19 pour la gestion réactive de l'état."
+    },
+    {
+      "id": 5,
+      "title": "Local Storage :",
+      "description": "Mise en cache de la préférence de langue sélectionnée."
+    }
+  ],
+  "keyFeatures": "Caractéristiques principales :",
+  "keyFeatureItems": [
+    {
+      "title": "Structure modulaire :",
+      "description": "Séparation nette entre les composants, les traductions et le service."
+    },
+    {
+      "title": "Architecture réactive :",
+      "description": "Utilisation de signals pour les changements de langue qui mettent à jour automatiquement l'interface utilisateur."
+    },
+    {
+      "title": "Persistance :",
+      "description": "Sauvegarde de la préférence de langue dans localStorage."
+    },
+    {
+      "title": "Détection de la langue du navigateur :",
+      "description": "Détecte automatiquement la langue du navigateur au premier chargement."
+    },
+    {
+      "title": "Style Bootstrap :",
+      "description": "Mise en page responsive avec implémentation appropriée du menu déroulant."
+    }
+  ],
+  "howItWorks": "Comment ça fonctionne :",
+  "howItWorksItems": [
+    "Le <code>I18nService</code> est le composant principal qui gère les traductions.",
+    "La sélection de la langue est gérée via un menu déroulant dans",
+    "Les traductions sont mises à jour de manière réactive à l'aide de signals.",
+    "Lorsqu'un utilisateur change de langue, elle est immédiatement enregistrée dans <code>Cache</code>.",
+    "À l'initialisation de l'application, elle vérifie d'abord <code>Cache</code>, puis la langue du navigateur."
+  ],
+  "implementation": "Pour implémenter ceci dans votre projet :",
+  "implementationItems": [
+    "Créez les fichiers selon la structure du code.",
+    "Assurez-vous d'inclure CSS et JS de Bootstrap dans votre <code>index.html</code>.",
+    "Exécutez votre application Angular."
+  ],
+  "extensionNote": "Vous pouvez facilement étendre ceci en ajoutant plus de langues – créez simplement des fichiers de traduction supplémentaires et mettez à jour le menu déroulant en conséquence."
+}

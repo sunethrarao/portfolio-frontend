@@ -1,0 +1,89 @@
+{
+  "title": "Angular internationalisation (i18n) Demo",
+  "welcome": "Welcome",
+  "selectLanguage": "Select Language",
+  "greeting": "Hello!",
+  "paragraph": "This is an example of internationalization in Angular 19 without NgModules.",
+  "buttonText": "Click me",
+
+  "formTitle": "Contact Form",
+  "nameLabel": "Name",
+  "namePlaceholder": "Enter your name",
+  "emailLabel": "Email address",
+  "emailPlaceholder": "Enter your email",
+  "termsLabel": "I agree to the terms and conditions",
+  "submitButton": "Submit",
+
+  "footerText": "© 2025 Angular i18n Demo. All rights reserved.",
+  "privacyLink": "Privacy Policy",
+  "termsLink": "Terms of Service",
+  "contactLink": "Contact Us",
+  "setUptitle": "Internationalization Setup Overview",
+
+  "coreImplementation": "Core Implementation:",
+  "coreItems": [
+    {
+      "id": 1,
+      "title": "No NgModules:",
+      "description": "Using standalone components throughout."
+    },
+    {
+      "id": 2,
+      "title": "Bootstrap Integration:",
+      "description": "For the language dropdown UI."
+    },
+    {
+      "id": 3,
+      "title": "Language Selection:",
+      "description": "Dropdown to toggle between English (en) and French (fr)."
+    },
+    {
+      "id": 4,
+      "title": "Signals:",
+      "description": "Leveraging Angular 19's signals for reactive state management."
+    },
+    {
+      "id": 5,
+      "title": "Local Storage:",
+      "description": "Caching the selected language preference."
+    }
+  ],
+  "keyFeatures": "Key Features:",
+  "keyFeatureItems": [
+    {
+      "title": "Modular Structure:",
+      "description": "Clean separation between components, translations, and service."
+    },
+    {
+      "title": "Reactive Architecture:",
+      "description": "Using signals for language changes that automatically update UI."
+    },
+    {
+      "title": "Persistence:",
+      "description": "Saving language preference to localStorage."
+    },
+    {
+      "title": "Browser Language Detection:",
+      "description": "Automatically detects browser language on first load."
+    },
+    {
+      "title": "Bootstrap Styling:",
+      "description": "Responsive layout with proper dropdown implementation."
+    }
+  ],
+  "howItWorks": "How It Works:",
+  "howItWorksItems": [
+    "The <code>I18nService</code> is the core component handling translations.",
+    "Language selection is managed through a dropdown",
+    "Translations are updated reactively using signals.",
+    "When a user changes language, it's immediately saved to <code>Cache</code>.",
+    "On app initialization, it checks <code>Cache</code> first, then browser language."
+  ],
+  "implementation": "To Implement This in Your Project:",
+  "implementationItems": [
+    "Create the files as structured in the code.",
+    "Make sure to include Bootstrap CSS and JS in your <code>index.html</code>.",
+    "Run your Angular app."
+  ],
+  "extensionNote": "You can easily extend this by adding more languages - just create additional translation files and update the dropdown accordingly."
+}

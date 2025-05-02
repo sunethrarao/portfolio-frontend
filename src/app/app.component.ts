@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "./shared/header/header.component";
-import { FooterComponent } from "./shared/footer/footer.component";
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,5 @@ import { FooterComponent } from "./shared/footer/footer.component";
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'portfolio-frontend';
+  title = 'Angular Portfolio Frontend';
 }

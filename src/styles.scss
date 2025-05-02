@@ -8,10 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-// html {
-//   overflow-x: hidden;
-// }
-
 html,
 body {
   height: 100%;
@@ -22,6 +18,10 @@ body {
 }
 .navbar-dark.bg-dark {
   background: $navbar-dark-bg !important;
+}
+
+.text-dark-purple {
+  color: $dark-purple;
 }
 
 .title-header {

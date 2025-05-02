@@ -8,6 +8,12 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "i18n": {
+          "sourceLocale": "en",
+          "locales": {
+            "fr": "src/assets/data/i18n/fr.json"
+          }
         }
       },
       "root": "",
