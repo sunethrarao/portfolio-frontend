@@ -76,25 +76,27 @@ export class I18nService {
     this.loading.set(true);
 
     // Load translations from JSON file
-    this.http.get<Translation>(`/assets/data/i18n/${language}.json`).subscribe({
-      next: (translations) => {
-        // Cache the translations
-        this.translationsCache.set(language, translations);
-        // Update the translations signal
-        this.translationsData.set(translations);
-        // Turn off loading state
-        this.loading.set(false);
-      },
-      error: (err) => {
-        console.error(`Failed to load translations for ${language}:`, err);
-        this.loading.set(false);
+    this.http
+      .get<Translation>(`./assets/data/i18n/${language}.json`)
+      .subscribe({
+        next: (translations) => {
+          // Cache the translations
+          this.translationsCache.set(language, translations);
+          // Update the translations signal
+          this.translationsData.set(translations);
+          // Turn off loading state
+          this.loading.set(false);
+        },
+        error: (err) => {
+          console.error(`Failed to load translations for ${language}:`, err);
+          this.loading.set(false);
 
-        // If we fail to load the requested language, try to fall back to English
-        if (language !== 'en') {
-          console.log('Falling back to English translations');
-          this.loadTranslations('en');
-        }
-      },
-    });
+          // If we fail to load the requested language, try to fall back to English
+          if (language !== 'en') {
+            console.log('Falling back to English translations');
+            this.loadTranslations('en');
+          }
+        },
+      });
   }
 }
