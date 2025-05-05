@@ -9,19 +9,23 @@
         {{ breadcrumb.label }}
       </span>
     </li> -->
-    <nav>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active"
-            >Carousel</a
-          >
-        </li>
-        <li class="breadcrumb-item">
-          <a class="nav-link" routerLink="/translate" routerLinkActive="active"
-            >Translation</a
-          >
-        </li>
-      </ol>
-    </nav>
+    <ul
+      class="breadcrumb d-flex flex-row flex-wrap justify-content-start align-items-center px-3 pt-3"
+    >
+      <li
+        class="breadcrumb-item d-flex flex-row flex-wrap justify-content-start align-items-center"
+      >
+        <a class="nav-link" routerLink="/home" routerLinkActive="active"
+          >Carousel
+        </a>
+      </li>
+      <li
+        class="breadcrumb-item d-flex flex-row flex-wrap justify-content-start align-items-center"
+      >
+        <a class="nav-link" routerLink="/translate" routerLinkActive="active"
+          >Translation</a
+        >
+      </li>
+    </ul>
   </ol>
 </div>

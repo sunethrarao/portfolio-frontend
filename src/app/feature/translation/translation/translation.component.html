@@ -1,89 +1,92 @@
-<div
-  class="card m-5"
-  [ngClass]="{
-    'bg-dark text-white border-light rounded shadow-lg': theme() === 'dark',
-    'bg-light shadow-lg border-info': theme() === 'light'
-  }"
->
-  <div
-    aria-live="polite"
-    class="card-header"
-    [ngClass]="{
-      'bg-dark-subtle text-dark-purple': theme() === 'dark',
-      'bg-light': theme() === 'light'
-    }"
-  >
-    <h2 aria-live="polite">
-      {{ i18n.translations$().welcome }}
-    </h2>
-  </div>
-  <div aria-live="polite" class="card-body m-3">
-    <h3>{{ i18n.translations$().greeting }}</h3>
-    <p>{{ i18n.translations$().paragraph }}</p>
-
-    <div aria-live="polite" class="container mt-5">
-      <div class="d-flex flex-row flex-wrap align-items-center me-auto">
-        <h2 class="justify-content-start align-items-center me-auto">
-          {{ i18n.translations$().title }}
+<div class="container pb-5 mb-5">
+  <div class="row">
+    <div
+      class="card my-2"
+      [ngClass]="{
+        'bg-dark text-white border-light rounded shadow-lg': theme() === 'dark',
+        'bg-light shadow-lg border-info': theme() === 'light'
+      }"
+    >
+      <div
+        aria-live="polite"
+        class="card-header"
+        [ngClass]="{
+          'bg-dark-subtle text-dark-purple': theme() === 'dark',
+          'bg-light': theme() === 'light'
+        }"
+      >
+        <h2 aria-live="polite">
+          {{ i18n.translations$().welcome }}
         </h2>
+      </div>
+      <div aria-live="polite" class="card-body m-3">
+        <h3>{{ i18n.translations$().greeting }}</h3>
+        <p>{{ i18n.translations$().paragraph }}</p>
 
-        <div
-          ngbDropdown
-          ngbDropdownAnchor
-          class="justify-content-end align-items-center"
-          container="body"
-          display="dynamic"
-          placement="auto"
-        >
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            id="dropdownBasic1"
-            ngbDropdownToggle
-          >
-            {{ currentLanguage() }}
-          </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem (click)="changeLanguage('en', $event)">
-              English
-            </button>
-            <button ngbDropdownItem (click)="changeLanguage('fr', $event)">
-              Français
-            </button>
+        <div aria-live="polite" class="container mt-5">
+          <div class="d-flex flex-row flex-wrap align-items-center me-auto">
+            <h2 class="justify-content-start align-items-center me-auto">
+              {{ i18n.translations$().title }}
+            </h2>
+
+            <div
+              ngbDropdown
+              ngbDropdownAnchor
+              class="justify-content-end align-items-center"
+              container="body"
+              display="dynamic"
+              placement="auto"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="dropdownBasic1"
+              >
+                {{ currentLanguage() }}
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem (click)="changeLanguage('en', $event)">
+                  English
+                </button>
+                <button ngbDropdownItem (click)="changeLanguage('fr', $event)">
+                  Français
+                </button>
+              </div>
+            </div>
           </div>
+
+          <h4 class="mt-4">{{ i18n.translations$().setUptitle }}</h4>
+          <ul aria-live="polite" class="list-group">
+            @for (item of i18n.translations$().coreItem; track item.id) {
+            <li class="list-group-item">
+              <strong>{{ item.title }}</strong> {{ item.description }}
+            </li>
+            }
+          </ul>
+
+          <h4 class="mt-4">{{ i18n.translations$().keyFeatures }}</h4>
+          <ul>
+            @for (item of i18n.translations$().keyFeatureItems; track $index) {
+            <li>
+              <strong>{{ item.title }}</strong> {{ item.description }}
+            </li>
+            }
+          </ul>
+
+          <h4 aria-live="polite" class="mt-4">
+            {{ i18n.translations$().howItWorks }}
+          </h4>
+          <ol>
+            @for (item of i18n.translations$().howItWorksItems; track $index) {
+            <li [innerHTML]="item"></li>
+            }
+          </ol>
+
+          <p class="mt-4 fst-italic">
+            {{ i18n.translations$().extensionNote }}
+          </p>
         </div>
       </div>
-
-      <h4 class="mt-4">{{ i18n.translations$().setUptitle }}</h4>
-      <ul aria-live="polite" class="list-group">
-        @for (item of i18n.translations$().coreItem; track item.id) {
-        <li class="list-group-item">
-          <strong>{{ item.title }}</strong> {{ item.description }}
-        </li>
-        }
-      </ul>
-
-      <h4 class="mt-4">{{ i18n.translations$().keyFeatures }}</h4>
-      <ul>
-        @for (item of i18n.translations$().keyFeatureItems; track $index) {
-        <li>
-          <strong>{{ item.title }}</strong> {{ item.description }}
-        </li>
-        }
-      </ul>
-
-      <h4 aria-live="polite" class="mt-4">
-        {{ i18n.translations$().howItWorks }}
-      </h4>
-      <ol>
-        @for (item of i18n.translations$().howItWorksItems; track $index) {
-        <li [innerHTML]="item"></li>
-        }
-      </ol>
-
-      <p class="mt-4 fst-italic">
-        {{ i18n.translations$().extensionNote }}
-      </p>
     </div>
   </div>
 </div>
