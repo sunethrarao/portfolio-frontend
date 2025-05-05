@@ -20,36 +20,37 @@
   <div aria-live="polite" class="card-body m-3">
     <h3>{{ i18n.translations$().greeting }}</h3>
     <p>{{ i18n.translations$().paragraph }}</p>
-    <!-- <button class="btn btn-success">
-      {{ i18n.translations$().buttonText }}
-    </button> -->
 
     <div aria-live="polite" class="container mt-5">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>{{ i18n.translations$().title }}</h2>
+      <div class="d-flex flex-row flex-wrap align-items-center me-auto">
+        <h2 class="justify-content-start align-items-center me-auto">
+          {{ i18n.translations$().title }}
+        </h2>
 
-        <div aria-live="polite" class="dropdown">
+        <div
+          ngbDropdown
+          ngbDropdownAnchor
+          class="justify-content-end align-items-center"
+          container="body"
+          display="dynamic"
+          placement="auto"
+        >
           <button
-            class="btn btn-success dropdown-toggle"
             type="button"
-            id="languageDropdown"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            class="btn btn-outline-primary"
+            id="dropdownBasic1"
+            ngbDropdownToggle
           >
             {{ currentLanguage() }}
           </button>
-          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-            <li>
-              <a class="dropdown-item" (click)="changeLanguage('en', $event)"
-                >English</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" (click)="changeLanguage('fr', $event)"
-                >Français</a
-              >
-            </li>
-          </ul>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem (click)="changeLanguage('en', $event)">
+              English
+            </button>
+            <button ngbDropdownItem (click)="changeLanguage('fr', $event)">
+              Français
+            </button>
+          </div>
         </div>
       </div>
 

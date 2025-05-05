@@ -1,11 +1,11 @@
-import { Component, computed, effect, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../services/theme.service';
 import { CommonModule } from '@angular/common';
-
+import { BreadcrumbComponent } from '../../feature/breadcrumb/breadcrumb/breadcrumb.component';
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, BreadcrumbComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

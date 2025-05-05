@@ -1,0 +1,27 @@
+<div class="d-flex flex-wrap breadcrumb-container">
+  <ol
+    class="breadcrumb"
+    style="--bs-breadcrumb-divider: '>'"
+    aria-label="breadcrumb"
+  >
+    <!-- <li *ngFor="let breadcrumb of breadcrumbs">
+      <span [routerLink]="breadcrumb.url" routerLinkActive="router-link-active">
+        {{ breadcrumb.label }}
+      </span>
+    </li> -->
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active"
+            >Carousel</a
+          >
+        </li>
+        <li class="breadcrumb-item">
+          <a class="nav-link" routerLink="/translate" routerLinkActive="active"
+            >Translation</a
+          >
+        </li>
+      </ol>
+    </nav>
+  </ol>
+</div>
