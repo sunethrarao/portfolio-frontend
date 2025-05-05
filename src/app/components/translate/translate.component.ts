@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
+// import { TranslationComponent } from '../../feature/translation/translation/translation.component';
+import { SupportedLanguages } from '../../shared/models/language.models';
+import { I18nService } from '../../shared/services/i18n.service';
 import { TranslationComponent } from '../feature/translation/translation/translation.component';
-import { SupportedLanguages } from '../shared/models/language.models';
-import { I18nService } from '../shared/services/i18n.service';
 
 @Component({
   selector: 'app-translate',

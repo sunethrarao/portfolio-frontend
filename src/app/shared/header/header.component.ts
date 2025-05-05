@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../services/theme.service';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbComponent } from '../../feature/breadcrumb/breadcrumb/breadcrumb.component';
+import { BreadcrumbComponent } from '../../components/feature/breadcrumb/breadcrumb/breadcrumb.component';
 @Component({
   selector: 'app-header',
   imports: [CommonModule, RouterModule, BreadcrumbComponent],

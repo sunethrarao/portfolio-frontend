@@ -1,11 +1,12 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import {
   CarouselImage,
   ImageService,
-} from '../../shared/services/image.service';
+} from '../../../shared/services/image.service';
+
 @Component({
   selector: 'app-carousel',
   standalone: true,

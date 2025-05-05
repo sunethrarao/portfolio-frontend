@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
-import { SupportedLanguages } from '../../../shared/models/language.models';
-import { I18nService } from '../../../shared/services/i18n.service';
-import { ThemeService } from '../../../shared/services/theme.service';
 import { CommonModule } from '@angular/common';
-import { SHARED_IMPORTS } from '../../../shared/models/sharedImports';
+import { SupportedLanguages } from '../../../../shared/models/language.models';
+import { SHARED_IMPORTS } from '../../../../shared/models/sharedImports';
+import { I18nService } from '../../../../shared/services/i18n.service';
+import { ThemeService } from '../../../../shared/services/theme.service';
 
 @Component({
   selector: 'app-translation',

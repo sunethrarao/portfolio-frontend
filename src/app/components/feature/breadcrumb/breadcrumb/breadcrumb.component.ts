@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SHARED_IMPORTS } from '../../../shared/models/sharedImports';
+import { SHARED_IMPORTS } from '../../../../shared/models/sharedImports';
 
 @Component({
   selector: 'app-breadcrumb',
