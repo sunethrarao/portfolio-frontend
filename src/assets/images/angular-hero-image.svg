@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 2560 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2980"/>
+      <stop offset="100%" stop-color="#26D0CE"/>
+    </linearGradient>
+    
+    <!-- Angular Logo Gradient -->
+    <linearGradient id="angularGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DD0031"/>
+      <stop offset="100%" stop-color="#C3002F"/>
+    </linearGradient>
+    
+    <!-- Component Gradients -->
+    <linearGradient id="componentGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A8FDD"/>
+      <stop offset="100%" stop-color="#5CE1E6"/>
+    </linearGradient>
+    
+    <linearGradient id="componentGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C4DFF"/>
+      <stop offset="100%" stop-color="#B388FF"/>
+    </linearGradient>
+    
+    <linearGradient id="componentGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4081"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </linearGradient>
+    
+    <!-- Code Lines Pattern -->
+    <pattern id="codePattern" patternUnits="userSpaceOnUse" width="300" height="300" patternTransform="scale(0.5) rotate(0)">
+      <rect width="100%" height="100%" fill="none"/>
+      <path d="M0,20 H300 M0,60 H200 M0,100 H250 M0,140 H180 M0,180 H220 M0,220 H300 M0,260 H150" stroke="#ffffff" stroke-opacity="0.1" stroke-width="2"/>
+      <path d="M20,0 V300 M60,0 V200 M100,0 V250 M140,0 V180 M180,0 V220 M220,0 V300 M260,0 V150" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+    </pattern>
+    
+    <!-- Animation for floating elements -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)"/>
+  <rect width="100%" height="100%" fill="url(#codePattern)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="200" cy="500" r="150" fill="#ffffff" fill-opacity="0.03"/>
+  <circle cx="1000" cy="150" r="100" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="950" cy="450" r="70" fill="#ffffff" fill-opacity="0.04"/>
+  <circle cx="300" cy="100" r="50" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="1200" cy="400" r="200" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="2000" cy="300" r="50" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="1780" cy="700" r="50" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="2500" cy="500" r="300" fill="#ffffff" fill-opacity="0.05"/>
+  
+  
+  <!-- Angular Logo (Center) -->
+  <g transform="translate(1200, 375) scale(1.5)" filter="url(#shadow)">
+    <!-- Shield -->
+    <path d="M-40,-115 L0,-125 L40,-115 L35,10 L0,40 L-35,10 Z" fill="url(#angularGradient)"/>
+    <path d="M0,-125 L40,-115 L35,10 L0,40 Z" fill="url(#angularGradient)" fill-opacity="0.8"/>
+    <!-- A -->
+    <path d="M0,-95 L-24,-15 L-14,-15 L-10,-30 L10,-30 L14,-15 L24,-15 Z M-6,-45 L6,-45 L0,-70 Z" fill="white"/>
+  </g>
+  
+  <!-- Component Cards -->
+  <!-- Card 1 -->
+  <g transform="translate(900, 400) rotate(-15)">
+    <rect x="-100" y="-70" width="200" height="140" rx="10" ry="10" fill="url(#componentGradient1)" filter="url(#shadow)"/>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">COMPONENTS</text>
+    <rect x="-70" y="-10" width="140" height="12" rx="2" ry="2" fill="white" fill-opacity="0.8"/>
+    <rect x="-70" y="12" width="90" height="12" rx="2" ry="2" fill="white" fill-opacity="0.6"/>
+    <rect x="-70" y="34" width="120" height="12" rx="2" ry="2" fill="white" fill-opacity="0.4"/>
+  </g>
+  
+  <!-- Card 2 -->
+  <g transform="translate(1500, 400) rotate(10)">
+    <rect x="-100" y="-70" width="200" height="140" rx="10" ry="10" fill="url(#componentGradient2)" filter="url(#shadow)"/>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">SERVICES</text>
+    <rect x="-70" y="-10" width="140" height="12" rx="2" ry="2" fill="white" fill-opacity="0.8"/>
+    <rect x="-70" y="12" width="90" height="12" rx="2" ry="2" fill="white" fill-opacity="0.6"/>
+    <rect x="-70" y="34" width="120" height="12" rx="2" ry="2" fill="white" fill-opacity="0.4"/>
+  </g>
+  
+  <!-- Card 3 -->
+  <g transform="translate(1200, 450) rotate(-5)">
+    <rect x="-100" y="-70" width="200" height="140" rx="10" ry="10" fill="url(#componentGradient3)" filter="url(#shadow)"/>
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">MODULES</text>
+    <rect x="-70" y="-10" width="140" height="12" rx="2" ry="2" fill="white" fill-opacity="0.8"/>
+    <rect x="-70" y="12" width="90" height="12" rx="2" ry="2" fill="white" fill-opacity="0.6"/>
+    <rect x="-70" y="34" width="120" height="12" rx="2" ry="2" fill="white" fill-opacity="0.4"/>
+  </g>
+  
+  <!-- Abstract Code Brackets -->
+  <g transform="translate(150, 180) scale(0.8)" fill="none" stroke="white" stroke-opacity="0.2" stroke-width="2">
+    <path d="M0,0 L-20,20 L0,40" transform="translate(-40, 0)"/>
+    <path d="M0,0 L20,20 L0,40" transform="translate(40, 0)"/>
+  </g>
+  
+  <g transform="translate(1050, 380) scale(0.8)" fill="none" stroke="white" stroke-opacity="0.2" stroke-width="2">
+    <path d="M0,0 L-20,20 L0,40" transform="translate(-40, 0)"/>
+    <path d="M0,0 L20,20 L0,40" transform="translate(40, 0)"/>
+  </g>
+  
+  <!-- Portfolio Title -->
+  <text x="1220" y="120" font-family="Arial, sans-serif" font-size="38" fill="white" text-anchor="middle" font-weight="bold" filter="url(#shadow)">ANGULAR PORTFOLIO</text>
+  <text x="1220" y="160" font-family="Arial, sans-serif" font-size="30" fill="white" text-anchor="middle" font-weight="light" letter-spacing="3" opacity="0.8">MODERN WEB APPLICATIONS</text>
+  
+  <!-- Decorative dots -->
+  <g fill="white" opacity="0.3">
+    <circle cx="350" cy="100" r="2"/>
+    <circle cx="370" cy="110" r="2"/>
+    <circle cx="360" cy="90" r="2"/>
+    <circle cx="380" cy="95" r="2"/>
+    <circle cx="390" cy="115" r="2"/>
+    
+    <circle cx="850" cy="500" r="2"/>
+    <circle cx="870" cy="510" r="2"/>
+    <circle cx="860" cy="490" r="2"/>
+    <circle cx="880" cy="495" r="2"/>
+    <circle cx="890" cy="515" r="2"/>
+  </g>
+</svg>

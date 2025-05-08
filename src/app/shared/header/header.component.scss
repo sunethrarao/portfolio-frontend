@@ -1,0 +1,13 @@
+.hero-section {
+  // background: url("assets/images/angular-hero-image.svg");
+  background: url("../../../assets/images/angular-hero-image.svg");
+  width: 100vw;
+  background-position: top;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  background-attachment: fixed;
+  aspect-ratio: 3 / 2;
+  height: 300px;
+}
