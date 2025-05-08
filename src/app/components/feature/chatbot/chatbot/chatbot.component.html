@@ -1,8 +1,37 @@
 <button
-  class="chat-toggle-button"
-  (click)="toggleChat()"
-  [style.backgroundColor]="'#d6409f'"
+  (click)="toggleChatNew()"
+  class="chat-section"
+  style="
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #750075;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  "
 >
-  <span class="chat-icon">💬</span>
-  <span class="chat-text">Chat with me</span>
+  Chat
 </button>
+
+<iframe
+  *ngIf="isChatVisible"
+  [src]="iframeUrl"
+  width="350"
+  height="500"
+  style="
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  "
+>
+</iframe>

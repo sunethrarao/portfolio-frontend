@@ -1,44 +1,24 @@
-.chat-toggle-button {
+.chat-section {
   position: fixed;
   bottom: 50px;
-  right: 50px;
-  padding: 10px 15px;
-  border-radius: 20px;
-  border: none;
+  right: 20px;
+  background-color: #750075;
   color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-// button.chat-toggle-button {
-//   margin: 0 0 35px;
-//   padding: 10px;
-// }
-
-.chat-icon {
-  margin-right: 8px;
-  font-size: 20px;
-}
-
-@media (max-width: 768px) {
-  .chat-text {
-    display: none;
-  }
-
-  .chat-toggle-button {
-    padding: 10px;
-    border-radius: 50%;
-  }
-
-  .chat-icon {
-    margin-right: 0;
-  }
-}
-
-.bpw-layout {
-  height: calc(85% - 50px) !important;
-  bottom: 50px !important;
+.chatwindow {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }

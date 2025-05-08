@@ -3,7 +3,6 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient } from '@angular/common/http';
-import { BOTPRESS_PROVIDERS } from './core/chatbot/chatbot';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -11,6 +10,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimations(),
     provideHttpClient(),
-    ...BOTPRESS_PROVIDERS,
+    // ...BOTPRESS_PROVIDERS,
   ],
 };

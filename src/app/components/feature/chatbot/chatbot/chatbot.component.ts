@@ -5,28 +5,27 @@ import {
   Input,
   ViewEncapsulation,
 } from '@angular/core';
-import { BotpressService } from '../../../../shared/services/botpress.service';
+import { CommonModule } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-chatbot',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './chatbot.component.html',
   styleUrl: './chatbot.component.scss',
   encapsulation: ViewEncapsulation.None,
 })
 export class ChatbotComponent {
-  private botpressService = inject(BotpressService);
+  isChatVisible = false;
+  iframeUrl: SafeResourceUrl;
 
-  ngOnInit(): void {
-    // Initialize with a delay to ensure the DOM is fully loaded
-    setTimeout(() => {
-      this.botpressService.initialize();
-      console.log('BotPress service initialized');
-    }, 500);
+  constructor(private sanitizer: DomSanitizer) {
+    this.iframeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      'https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/05/05/13/20250505134758-6LE3RG8H.json'
+    );
   }
 
-  toggleChat(): void {
-    console.log('Toggle chat button clicked');
-    this.botpressService.toggleChat();
+  toggleChatNew() {
+    this.isChatVisible = !this.isChatVisible;
   }
 }

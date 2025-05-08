@@ -19,22 +19,3 @@
 //   },
 //   "clientId": "1b816468-fd15-4f12-9e18-0c9df1d17b62"
 // });
-
-import { APP_INITIALIZER } from '@angular/core';
-import { BotpressService } from '../../shared/services/botpress.service';
-
-export function initializeBotpress(botpressService: BotpressService) {
-  return () => {
-    botpressService.initialize();
-  };
-}
-
-// This provides an alternative to NgModules for initialization
-export const BOTPRESS_PROVIDERS = [
-  {
-    provide: APP_INITIALIZER,
-    useFactory: initializeBotpress,
-    deps: [BotpressService],
-    multi: true,
-  },
-];
