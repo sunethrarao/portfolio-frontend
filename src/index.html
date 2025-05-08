@@ -5,7 +5,7 @@
     <title>Portfolio Frontend</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
       content="
       default-src 'self';
@@ -16,12 +16,25 @@
       base-uri 'self';
       connect-src 'self';
       form-action 'self';"
-    />
+    /> -->
     <meta
       name="keywords"
       content="angular 19 portfolio, angular signals, frontend portfolio, frontend, web development, projects, developer portfolio, responsive design, toggle dark light mode, owl-carousel, bootstrap"
     />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Prevent MIME type errors by explicitly setting the content type -->
+    <link rel="preconnect" href="https://cdn.botpress.cloud" crossorigin />
+    <!-- BotPress Setup -->
+    <script>
+      window.botpressWebChat = window.botpressWebChat || {};
+
+      // Create a safe stubbed version in case it's used before initialization
+      if (!window.botpressWebChat.sendEvent) {
+        window.botpressWebChat.sendEvent = function () {
+          console.warn("BotPress WebChat not yet initialized");
+        };
+      }
+    </script>
   </head>
 
   <body>
