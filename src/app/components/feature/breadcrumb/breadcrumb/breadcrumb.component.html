@@ -19,7 +19,13 @@
       <li
         class="breadcrumb-item d-flex flex-row flex-wrap justify-content-start align-items-center"
       >
-        <a class="nav-link" routerLink="/home" routerLinkActive="active" fragment="carousel-fragment"
+        <a
+          class="nav-link"
+          routerLink="/home"
+          routerLinkActive="active"
+          fragment="carousel"
+          ngbTooltip="Click to scroll to Carousel section"
+          placement="auto"
           >Carousel
         </a>
       </li>
@@ -32,8 +38,17 @@
       </li>
       <li
         class="breadcrumb-item d-flex flex-row flex-wrap justify-content-start align-items-center"
+        ngbTooltip="Click to Chat icon to open chat"
+        placement="auto"
       >
         ChatBot Demo
+      </li>
+      <li
+        class="breadcrumb-item d-flex flex-row flex-wrap justify-content-start align-items-center"
+        ngbTooltip="Click to toggle the theme on the Navigation bar"
+        placement="auto"
+      >
+        Toggle Theme
       </li>
     </ul>
   </ol>
