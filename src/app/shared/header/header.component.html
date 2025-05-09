@@ -1,7 +1,13 @@
 <header>
   <nav class="navbar navbar-expand-md shadow navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="home">My Space</a>
+      <a class="navbar-brand" routerLink="home">
+        <img
+          src="../../../assets/images/SK-Icon-Design.png"
+          class="brandImage ms-5"
+          width="35"
+        />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -40,7 +46,7 @@
         </ul>
       </div>
       <button
-        class="btn btn-outline-light ms-auto d-flex align-items-center gap-2"
+        class="btn btn-outline-light ms-auto d-flex align-items-center gap-2 me-md-5"
         (click)="toggleTheme()"
       >
         <i
