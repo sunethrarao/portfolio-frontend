@@ -66,6 +66,20 @@
     <path d="M0,-95 L-24,-15 L-14,-15 L-10,-30 L10,-30 L14,-15 L24,-15 Z M-6,-45 L6,-45 L0,-70 Z" fill="white"/>
   </g>
   
+<!-- SK Logo (Center) -->
+  
+  <g transform="translate(2000, 100) scale(0.15)" filter="url(#shadow)">
+  <!-- Rounded Square Border -->
+  <rect x="22" y="60" width="500" height="450" rx="60" ry="60" fill="transparent" stroke="#EEEEEE" stroke-width="30"/>
+ <!-- Letter S -->
+  <path d="M130,250 Q130,190 200,190 L240,190 L240,240 L200,240 Q170,240 170,250 Q170,260 200,260 L220,260 Q300,260 300,330 Q300,390 230,390 L130,390 L130,340 L230,340 Q260,340 260,330 Q260,320 230,320 L210,320 Q130,320 130,250 Z" fill="#EEEEEE"/>
+  <!-- Letter K - shifted +26 units for 13px → 10px more than last time -->
+  <path d="M286,190 L326,190 L326,270 L366,190 L416,190 L351,290 L416,390 L366,390 L326,320 L326,390 L286,390 Z" fill="#EEEEEE"/>
+  <!-- Angle Brackets -->  
+	<path d="M100,250 L75,280 L100,310" fill="none" stroke="#EEEEEE" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M430,250 L455,280 L430,310" fill="none" stroke="#EEEEEE" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
   <!-- Component Cards -->
   <!-- Card 1 -->
   <g transform="translate(900, 400) rotate(-15)">
@@ -106,8 +120,8 @@
   </g>
   
   <!-- Portfolio Title -->
-  <text x="1220" y="120" font-family="Arial, sans-serif" font-size="38" fill="white" text-anchor="middle" font-weight="bold" filter="url(#shadow)">ANGULAR PORTFOLIO</text>
-  <text x="1220" y="160" font-family="Arial, sans-serif" font-size="30" fill="white" text-anchor="middle" font-weight="light" letter-spacing="3" opacity="0.8">MODERN WEB APPLICATIONS</text>
+  <text x="1220" y="140" font-family="Arial, sans-serif" font-size="38" fill="white" text-anchor="middle" font-weight="bold" filter="url(#shadow)">ANGULAR PORTFOLIO</text>
+  <text x="1220" y="170" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="light" letter-spacing="3" opacity="0.8">MODERN WEB APPLICATIONS</text>
   
   <!-- Decorative dots -->
   <g fill="white" opacity="0.3">
