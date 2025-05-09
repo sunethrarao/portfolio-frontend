@@ -1,7 +1,8 @@
-import { Routes } from '@angular/router';
+import { ExtraOptions, Routes } from '@angular/router';
 import { PortfolioHomeComponent } from './components/portfolio-home/portfolio-home.component';
 import { TranslateComponent } from './components/translate/translate.component';
 import { ChatbotComponent } from './components/feature/chatbot/chatbot/chatbot.component';
+
 
 export const routes: Routes = [
   {

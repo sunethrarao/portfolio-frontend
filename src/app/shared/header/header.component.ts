@@ -6,6 +6,7 @@ import { BreadcrumbComponent } from '../../components/feature/breadcrumb/breadcr
 @Component({
   selector: 'app-header',
   imports: [CommonModule, RouterModule, BreadcrumbComponent],
+  standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
